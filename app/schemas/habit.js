@@ -14,7 +14,7 @@ HabitSchema.pre("save", function (next) {
     next();
 });
 
-HabitSchema.statis = {
+HabitSchema.statics = {
     fetch: function (cb) {
         return this.find({})
             .sort("createAt")

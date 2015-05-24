@@ -16,11 +16,15 @@ exports.save = function (req, res) {
             console.log(err);
         }
         else {
-            res.json({success: 1})
+
             console.log("接收到数据，并成功存储到mongoDB!");
-            console.log(req.body.sumScore);
-            console.log(req.body.aItemScore);
-            console.log(req.body.oCategoryScore);
+
+            res.json({
+                success: 1
+            });
+            //console.log(req.body.sumScore);
+            //console.log(req.body.aItemScore);
+            //console.log(req.body.oCategoryScore);
         }
     })
 

@@ -19,6 +19,7 @@ mongoose.connect("mongodb://localhost/habit");
 app.set("views", "./views");
 app.set("view engine", "jade");
 app.use(express.static(path.join(__dirname, "public")));
+app.locals.moment = require("moment");
 app.listen(port);
 
 require("./routes")(app);

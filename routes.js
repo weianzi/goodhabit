@@ -1,5 +1,6 @@
 var Index = require("./app/controllers/index");
 var Save = require("./app/controllers/save");
+var Admin = require("./app/controllers/admin");
 
 module.exports = function (app) {
 
@@ -7,4 +8,6 @@ module.exports = function (app) {
 
     app.post("/admin/save", Save.save)
 
+    app.get("/admin", Admin.admin);
+    
 };
