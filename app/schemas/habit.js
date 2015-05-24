@@ -1,8 +1,8 @@
 var mongoose = require("mongoose");
 var HabitSchema = new mongoose.Schema({
-    sumScore: String,
-    //aItemScore: Array,
-    //oCategoryScore: Object,
+    sumScore: Number,
+    aItemScore: Array,
+    oCategoryScore: Object,
     createAt: {
         type: Date,
         default: Date.now()
