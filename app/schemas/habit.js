@@ -1,7 +1,7 @@
 var mongoose = require("mongoose");
 var HabitSchema = new mongoose.Schema({
     sumScore: Number,
-    aItemScore: Array,
+    aItemScore: Object,
     oCategoryScore: Object,
     createAt: {
         type: Date,
@@ -24,6 +24,6 @@ HabitSchema.statics = {
         return this.findOne({_id: id})
             .exec(cb);
     }
-}
+};
 
 module.exports = HabitSchema;

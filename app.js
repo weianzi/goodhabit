@@ -3,7 +3,7 @@
  */
 
 var express = require("express");
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8090;
 var path = require("path");
 var mongoose = require("mongoose");
 var Habit = require("./app/models/habit");
@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 
 mongoose.connect("mongodb://localhost/habit");
 
-app.set("views", "./views");
+app.set("views", "./app/views");
 app.set("view engine", "jade");
 app.use(express.static(path.join(__dirname, "public")));
 app.locals.moment = require("moment");
