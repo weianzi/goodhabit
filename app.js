@@ -13,6 +13,14 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
+app.use(bodyParser.json());
+app.use(bodyParser.json());
+app.use(bodyParser.json());
+app.use(bodyParser.json());
+app.use(bodyParser.json());
+app.use(bodyParser.json());rser.json());
+app.use(bodyParser.json());
+app.use(bodyParser.json());
 
 mongoose.connect("mongodb://localhost/habit");
 
@@ -24,4 +32,4 @@ app.listen(port);
 
 require("./routes")(app);
 
-console.log("服务启动成功在端口" + port);
+console.log("服务启动成功！端口" + port);

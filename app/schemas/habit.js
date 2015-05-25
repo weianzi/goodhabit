@@ -1,18 +1,18 @@
 var mongoose = require("mongoose");
 var HabitSchema = new mongoose.Schema({
     sumScore: Number,
-    aItemScore: Object,
-    oCategoryScore: Object,
+    aItemScore: String,
+    oCategoryScore: String,
     createAt: {
         type: Date,
         default: Date.now()
     }
 });
 
-HabitSchema.pre("save", function (next) {
+/*HabitSchema.pre("save", function (next) {
     this.createAt = Date.now();
     next();
-});
+});*/
 
 HabitSchema.statics = {
     fetch: function (cb) {
