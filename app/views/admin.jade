@@ -1,22 +1,20 @@
-doctype html
-html
-	include head
-	link(href='/css/bootstrap.min.css', rel='stylesheet')
-	body
-		h1.text-center #{title}
-		.container
-			.row
-				table.table.table-hover.table-bordered
-					thead
-						tr
-							th 测试时间
-							th 总分
-							th 各题得分
-							th 各分类总分
-					tbody
-						each item in habits
-							tr
-								td #{moment(item.createAt).format('YYYY-MM-DD HH:mm:ss')} 
-								td #{item.sumScore} 分
-								td #{item.aItemScore}
-								td #{item.oCategoryScore}
+extends layout-admin
+
+block content
+    h1.text-center #{title}
+    .container
+        .row
+            table.table.table-hover.table-bordered
+                thead
+                    tr
+                        th.text-center(width='90') 测试时间
+                        th.text-center(width='90') 总分
+                        th.text-center 各题得分
+                        th.text-center 各分类总分
+                tbody
+                    each item in habits
+                        tr
+                            td #{moment(item.createAt).format('YYYY-MM-DD HH:mm:ss')}
+                            td #{item.sumScore} 分 + 50
+                            td.text-left #{item.aItemScore}
+                            td.text-left #{item.oCategoryScore}

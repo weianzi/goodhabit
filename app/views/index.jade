@@ -1,365 +1,364 @@
-doctype html
-html
-    include head
-    body
-        .start.hide
-            button 开始
-        .wrapper
-            h1 生活好习惯，我测你来看
-            section.question.hide(data-goodhabit='以终为始', data-category='02')
-                h2 1. 假如给你三天的光明，你会？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item01')
-                                | 宅在家里做喜欢的事情
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item01')
-                                | 想象三天各种美好的计划
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item01')
-                                | 来一场说走就走的旅行
-            section.question.hide(data-goodhabit='以终为始', data-category='02')
-                h2 2. 看到一篇文章《当儿孙满堂时，就去环游世界》，当时的心情是？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item02')
-                                | 热血沸腾了好一阵子
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item02')
-                                | 理想总是美好的，可岁月不饶
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item02')
-                                | 对，这正是我追求的生活
-            section.question.hide(data-goodhabit='不断更新', data-category='07')
-                h2 3. 日记对你来说是？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item03')
-                                | 曾经爱过
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item03')
-                                | 坚持在爱
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item03')
-                                | 从未爱过
-            section.question.hide(data-goodhabit='主动积极', data-category='01')
-                h2 4. 新来的主管被传爱挑毛病，你的第一反应是？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item04')
-                                | 小心谨慎
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item04')
-                                | 避而远之
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item04')
-                                | 完美主义
-            section.question.hide(data-goodhabit='统合综效', data-category='06')
-                h2 5. 主管布置了任务需要一周内完成，你总会？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item05')
-                                | 最后一晚突然爆发完成
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item05')
-                                | 每天都抽时间思考，最后一天刚好完成
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item05')
-                                | 一鼓作气两天内迅速完成
-            section.question.hide(data-goodhabit='双赢思维', data-category='05')
-                h2 6. 与客户谈判中，哪种状况是你最渴望出现的？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item06')
-                                | 大家各取所需，互不亏欠
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item06')
-                                | 客户是菜鸟，对你的攻势毫无招架
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item06')
-                                | 找到折中的方式双方平分利益
-            section.question.hide(data-goodhabit='主动积极', data-category='01')
-                h2 7. 以下情景最让你兴奋的是？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item07')
-                                | 领工资时才发现多了奖金
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item07')
-                                | 成功完成了一次项目
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item07')
-                                | 被同事和上司认可和赞许
-            section.question.hide(data-goodhabit='要事第一', data-category='03')
-                h2 8. 你的周末健身计划常常会？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item08')
-                                | 无论风吹雨打都坚持下来
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item08')
-                                | 因各种邀约而延期
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item08')
-                                | 因不够坚持而中断
-            section.question.hide(data-goodhabit='双赢思维', data-category='05')
-                h2 9. 跟你平级的同事成功谈下一个大项目，直觉告诉你是什么原因？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item09')
-                                | 同事的能力确实出色
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item09')
-                                | 机遇问题，不纠结
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item09')
-                                | 自己能力还不够
-            section.question.hide(data-goodhabit='以终为始', data-category='02')
-                h2 10. 让一位同事来评价你，你觉得会是？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item10')
-                                | 热情和敏感
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item10')
-                                | 理性和明确
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item10')
-                                | 坚持和沉默
-            section.question.hide(data-goodhabit='统合综效', data-category='06')
-                h2 11. 在社交中，你希望？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item11')
-                                | 找个安静的角落观察众人
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item11')
-                                | 与各式各样的人打交道
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item11')
-                                | 大多时候与志趣相投的朋友呆在一起
-            section.question.hide(data-goodhabit='统合综效', data-category='06')
-                h2 12. 在头脑风暴会议上，哪种角色会让你更习惯？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item12')
-                                | 决策者
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item12')
-                                | 意见发言者
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item12')
-                                | 记录者
-            section.question.hide(data-goodhabit='不断更新', data-category='07')
-                h2 13. 聚会上，老同学对你的体型评价是？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item13')
-                                | 几乎没怎么变，保持得还可以
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item13')
-                                | 越来越有“份量”了
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item13')
-                                | 模特的身材，羡慕不已
-            section.question.hide(data-goodhabit='不断更新', data-category='07')
-                h2 14. 天气突变，各种“流”来袭，你不幸中招，习惯怎么应对？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item14')
-                                | 身体杠杠滴，熬下就好了
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item14')
-                                | 多喝开水
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item14')
-                                | 吃药尽快康复
-            section.question.hide(data-goodhabit='主动积极', data-category='01')
-                h2 15. 面对不可挽回的感情，你通常会？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item15')
-                                | 一旦下定决心，会狠心放下过去
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item15')
-                                | 向朋友倾诉，以便更了解自己
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item15')
-                                | 情绪深陷其中，短时间内难以抽身
-            section.question.hide(data-goodhabit='知彼解己', data-category='04')
-                h2 16. 过去，另一半在冲突中对你说得最多的是？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item16')
-                                | 你有考虑过我的感受吗？
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item16')
-                                | 不要再问我了，我也不知道
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item16')
-                                | 你难道不能安静点吗？
-            section.question.hide(data-goodhabit='双赢思维', data-category='05')
-                h2 17. 家庭日，你准备与父母看一场电影，可是父母双方却各有所爱，你会？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item17')
-                                | 放弃，大家各自安排
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item17')
-                                | 两场电影接着看，满足大家
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item17')
-                                | 组织另一个活动
-            section.question.hide(data-goodhabit='知彼解己', data-category='04')
-                h2 18. 孩子很叛逆，你在对朋友诉苦中常常会说？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item18')
-                                | 我现在都不了解他，他一点都不听我的话
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item18')
-                                | 我想该好好教育他不该这么叛逆
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item18')
-                                | 我真想知道现在的孩子是怎么想的，难以理解
-            section.question.hide(data-goodhabit='知彼解己', data-category='04')
-                h2 19. 另一半因小事向你大发雷霆，你会？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item19')
-                                | 撇开对方的缺点，询问原因
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item19')
-                                | 指出对方的不足，因为发脾气就是错的
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item19')
-                                | 不予理会，毕竟赢了道理输了感情
-            section.question.hide(data-goodhabit='要事第一', data-category='03')
-                h2 20. 白天刚制定减肥计划，晚上路过烧烤店却被深深地吸引住了，于是？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item20')
-                                | 先吃一点，明天正式开始减肥
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item20')
-                                | 早已忘记了什么宣言
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item20')
-                                | 还是回去吃点水果好了
-            section.question.hide(data-goodhabit='要事第一', data-category='03')
-                h2 21. 让你给自己的生活压力评价，会是？
-                .list-group
-                    ul
-                        li
-                            label
-                                input(data-score='0', type='radio', name='item21')
-                                | 快乐最重要，从不给自己压力
-                        li
-                            label
-                                input(data-score='2', type='radio', name='item21')
-                                | 生活工作张弛有度，有时忙有时闲
-                        li
-                            label
-                                input(data-score='1', type='radio', name='item21')
-                                | 每天忙得连吃喝拉撒的时间都没有
-            section#conclusion.hide
-                .total-score
-                    | 结果：你的好习惯分数为
-                    span
-                    | 分，打败了全国
-                    span
-                    | %的挑战者。
-                // 总评语
-                .epilogue
-                // 导语
-                .summary-start.hide
-                // 发光点 警惕
-                .light-flash.hide
-                    .good.hide
-                        h3 发光点：
-                    .bad.hide
-                        h3 警惕：
-                // 结语
-                .summary-end.hide
-                // 各分类的总分是3-4分的或其他分的
-                .summary-narrow.hide
+extends layout
+
+block content
+    .start.hide
+        button 开始
+    .wrapper
+        h1 生活好习惯，我测你来看
+        section.question.hide(data-goodhabit='以终为始', data-category='02')
+            h2 1. 假如给你三天的光明，你会？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item01')
+                            | 宅在家里做喜欢的事情
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item01')
+                            | 想象三天各种美好的计划
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item01')
+                            | 来一场说走就走的旅行
+        section.question.hide(data-goodhabit='以终为始', data-category='02')
+            h2 2. 看到一篇文章《当儿孙满堂时，就去环游世界》，当时的心情是？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item02')
+                            | 热血沸腾了好一阵子
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item02')
+                            | 理想总是美好的，可岁月不饶
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item02')
+                            | 对，这正是我追求的生活
+        section.question.hide(data-goodhabit='不断更新', data-category='07')
+            h2 3. 日记对你来说是？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item03')
+                            | 曾经爱过
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item03')
+                            | 坚持在爱
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item03')
+                            | 从未爱过
+        section.question.hide(data-goodhabit='主动积极', data-category='01')
+            h2 4. 新来的主管被传爱挑毛病，你的第一反应是？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item04')
+                            | 小心谨慎
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item04')
+                            | 避而远之
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item04')
+                            | 完美主义
+        section.question.hide(data-goodhabit='统合综效', data-category='06')
+            h2 5. 主管布置了任务需要一周内完成，你总会？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item05')
+                            | 最后一晚突然爆发完成
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item05')
+                            | 每天都抽时间思考，最后一天刚好完成
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item05')
+                            | 一鼓作气两天内迅速完成
+        section.question.hide(data-goodhabit='双赢思维', data-category='05')
+            h2 6. 与客户谈判中，哪种状况是你最渴望出现的？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item06')
+                            | 大家各取所需，互不亏欠
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item06')
+                            | 客户是菜鸟，对你的攻势毫无招架
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item06')
+                            | 找到折中的方式双方平分利益
+        section.question.hide(data-goodhabit='主动积极', data-category='01')
+            h2 7. 以下情景最让你兴奋的是？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item07')
+                            | 领工资时才发现多了奖金
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item07')
+                            | 成功完成了一次项目
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item07')
+                            | 被同事和上司认可和赞许
+        section.question.hide(data-goodhabit='要事第一', data-category='03')
+            h2 8. 你的周末健身计划常常会？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item08')
+                            | 无论风吹雨打都坚持下来
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item08')
+                            | 因各种邀约而延期
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item08')
+                            | 因不够坚持而中断
+        section.question.hide(data-goodhabit='双赢思维', data-category='05')
+            h2 9. 跟你平级的同事成功谈下一个大项目，直觉告诉你是什么原因？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item09')
+                            | 同事的能力确实出色
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item09')
+                            | 机遇问题，不纠结
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item09')
+                            | 自己能力还不够
+        section.question.hide(data-goodhabit='以终为始', data-category='02')
+            h2 10. 让一位同事来评价你，你觉得会是？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item10')
+                            | 热情和敏感
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item10')
+                            | 理性和明确
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item10')
+                            | 坚持和沉默
+        section.question.hide(data-goodhabit='统合综效', data-category='06')
+            h2 11. 在社交中，你希望？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item11')
+                            | 找个安静的角落观察众人
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item11')
+                            | 与各式各样的人打交道
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item11')
+                            | 大多时候与志趣相投的朋友呆在一起
+        section.question.hide(data-goodhabit='统合综效', data-category='06')
+            h2 12. 在头脑风暴会议上，哪种角色会让你更习惯？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item12')
+                            | 决策者
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item12')
+                            | 意见发言者
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item12')
+                            | 记录者
+        section.question.hide(data-goodhabit='不断更新', data-category='07')
+            h2 13. 聚会上，老同学对你的体型评价是？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item13')
+                            | 几乎没怎么变，保持得还可以
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item13')
+                            | 越来越有“份量”了
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item13')
+                            | 模特的身材，羡慕不已
+        section.question.hide(data-goodhabit='不断更新', data-category='07')
+            h2 14. 天气突变，各种“流”来袭，你不幸中招，习惯怎么应对？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item14')
+                            | 身体杠杠滴，熬下就好了
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item14')
+                            | 多喝开水
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item14')
+                            | 吃药尽快康复
+        section.question.hide(data-goodhabit='主动积极', data-category='01')
+            h2 15. 面对不可挽回的感情，你通常会？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item15')
+                            | 一旦下定决心，会狠心放下过去
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item15')
+                            | 向朋友倾诉，以便更了解自己
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item15')
+                            | 情绪深陷其中，短时间内难以抽身
+        section.question.hide(data-goodhabit='知彼解己', data-category='04')
+            h2 16. 过去，另一半在冲突中对你说得最多的是？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item16')
+                            | 你有考虑过我的感受吗？
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item16')
+                            | 不要再问我了，我也不知道
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item16')
+                            | 你难道不能安静点吗？
+        section.question.hide(data-goodhabit='双赢思维', data-category='05')
+            h2 17. 家庭日，你准备与父母看一场电影，可是父母双方却各有所爱，你会？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item17')
+                            | 放弃，大家各自安排
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item17')
+                            | 两场电影接着看，满足大家
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item17')
+                            | 组织另一个活动
+        section.question.hide(data-goodhabit='知彼解己', data-category='04')
+            h2 18. 孩子很叛逆，你在对朋友诉苦中常常会说？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item18')
+                            | 我现在都不了解他，他一点都不听我的话
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item18')
+                            | 我想该好好教育他不该这么叛逆
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item18')
+                            | 我真想知道现在的孩子是怎么想的，难以理解
+        section.question.hide(data-goodhabit='知彼解己', data-category='04')
+            h2 19. 另一半因小事向你大发雷霆，你会？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item19')
+                            | 撇开对方的缺点，询问原因
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item19')
+                            | 指出对方的不足，因为发脾气就是错的
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item19')
+                            | 不予理会，毕竟赢了道理输了感情
+        section.question.hide(data-goodhabit='要事第一', data-category='03')
+            h2 20. 白天刚制定减肥计划，晚上路过烧烤店却被深深地吸引住了，于是？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item20')
+                            | 先吃一点，明天正式开始减肥
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item20')
+                            | 早已忘记了什么宣言
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item20')
+                            | 还是回去吃点水果好了
+        section.question.hide(data-goodhabit='要事第一', data-category='03')
+            h2 21. 让你给自己的生活压力评价，会是？
+            .list-group
+                ul
+                    li
+                        label
+                            input(data-score='0', type='radio', name='item21')
+                            | 快乐最重要，从不给自己压力
+                    li
+                        label
+                            input(data-score='2', type='radio', name='item21')
+                            | 生活工作张弛有度，有时忙有时闲
+                    li
+                        label
+                            input(data-score='1', type='radio', name='item21')
+                            | 每天忙得连吃喝拉撒的时间都没有
+        section#conclusion.hide
+            .total-score
+                | 结果：你的好习惯分数为
+                span
+                | 分，打败了全国
+                span
+                | %的挑战者。
+            // 总评语
+            .epilogue
+            // 导语
+            .summary-start.hide
+            // 发光点 警惕
+            .light-flash.hide
+                .good.hide
+                    h3 发光点：
+                .bad.hide
+                    h3 警惕：
+            // 结语
+            .summary-end.hide
+            // 各分类的总分是3-4分的或其他分的
+            .summary-narrow.hide

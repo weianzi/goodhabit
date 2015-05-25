@@ -6,7 +6,7 @@ module.exports = function (app) {
 
     app.get("/", Index.index);
 
-    app.post("/admin/save", Save.save)
+    app.post("/admin/save", Save.save);
 
     app.get("/admin", Admin.admin);
     
