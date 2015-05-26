@@ -1,4 +1,5 @@
 var mongoose = require("mongoose");
+
 var HabitSchema = new mongoose.Schema({
     sumScore: Number,
     aItemScore: String,
