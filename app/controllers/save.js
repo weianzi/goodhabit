@@ -7,8 +7,7 @@ exports.save = function (req, res) {
     _habit = new Habit({
         sumScore: req.body.sumScore,
         aItemScore: req.body.aItemScore,
-        oCategoryScore: req.body.oCategoryScore,
-
+        oCategoryScore: req.body.oCategoryScore
     });
 
     _habit.save(function (err, habit) {
@@ -23,9 +22,7 @@ exports.save = function (req, res) {
                 success: 1
             });
             
-            //console.log(habit);
-            //console.log(req.body.aItemScore);
-            //console.log(req.body.oCategoryScore);
+            //console.log(habit); //habit：当前存储的信息对象
         }
     })
 
