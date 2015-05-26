@@ -13,14 +13,6 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
-app.use(bodyParser.json());
-app.use(bodyParser.json());
-app.use(bodyParser.json());
-app.use(bodyParser.json());
-app.use(bodyParser.json());
-app.use(bodyParser.json());rser.json());
-app.use(bodyParser.json());
-app.use(bodyParser.json());
 
 mongoose.connect("mongodb://localhost/habit");
 

@@ -1,9 +1,9 @@
 extends layout
 
 block content
-    .start.hide
-        button 开始
-    .wrapper
+    #start
+        a.btn.white(href="javascript:;") 开始
+    .wrapper.hide
         h1 生活好习惯，我测你来看
         section.question.hide(data-goodhabit='以终为始', data-category='02')
             h2 1. 假如给你三天的光明，你会？
@@ -362,3 +362,21 @@ block content
             .summary-end.hide
             // 各分类的总分是3-4分的或其他分的
             .summary-narrow.hide
+            //
+            a.btn.enter.white(href="/#end") 确定
+
+    section#end.hide
+        p 你坚持完成了一次内心之旅，证明你是一个追求生活的人。
+        p 我不擅长金融地产挖掘机
+        p 但关于喝茶
+        p 却可以来这里聊聊
+        p 不为名利
+        p 只为追求健康的生活习惯
+        .code-pic
+            img(src="/images/code-pic.jpg")
+        a.btn.share.white(href="javascript:;") 邀请好友测试
+        a.btn.white(href="/#conclusion") 返回测试结果
+        a.btn.white(href="/") 重新测试
+
+    #mcover.hide
+        img(src='/images/guide.png')

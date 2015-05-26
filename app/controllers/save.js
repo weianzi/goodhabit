@@ -22,7 +22,8 @@ exports.save = function (req, res) {
             res.json({
                 success: 1
             });
-            //console.log(req.body.sumScore);
+            
+            //console.log(habit);
             //console.log(req.body.aItemScore);
             //console.log(req.body.oCategoryScore);
         }
