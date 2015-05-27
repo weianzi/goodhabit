@@ -160,6 +160,7 @@ textarea {
 body {
   display: block;
   min-width: 320px;
+  min-height: 568px;
   width: 16rem;
   margin: 0 auto;
   -webkit-text-size-adjust: none;

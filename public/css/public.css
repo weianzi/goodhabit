@@ -3,32 +3,28 @@ a {
   vertical-align: baseline;
   text-decoration: none;
   color: #000;
-
-  &:link, &:visited {
-    color: #000;
-  }
-  &:hover {
-    text-decoration: none;
-  }
-  &:focus {
-    outline-style: none;
-    -moz-outline-style: none;
-  }
 }
-
+a:link,
+a:visited {
+  color: #000;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  outline-style: none;
+  -moz-outline-style: none;
+}
 .block {
   display: block;
   margin: 10px auto;
 }
-
 .fl {
   float: left;
 }
-
 .fr {
   float: right;
 }
-
 .clearfix:after {
   content: '.';
   display: block;
@@ -36,20 +32,16 @@ a {
   height: 0;
   visibility: hidden;
 }
-
 .white {
   color: #fff !important;
 }
-
 .hide {
   display: none;
 }
-
 .hide-vis {
   visibility: hidden;
 }
-
-/*Ò³ÃæÔØÈëµÈ´ý*/
+/*Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È´ï¿½*/
 .loading-page {
   position: fixed;
   top: 50%;

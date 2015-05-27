@@ -1,12 +1,53 @@
 extends layout
 
 block content
-    #start
-        a.btn(href="javascript:;") 开始
-    .wrapper.hide
-        h1 生活好习惯，我测你来看
+    .loading-page
+    section#start.hide-vis
+        .title.animated.fadeInDown
+            img(src='/images/title.png')
+        .box-wrap
+            p
+                | 21个生活习惯，述说最真实的你
+                br
+                | 21天的坚持，养成一辈子的好习惯
+                br
+                | 在忙碌中回望
+                br
+                | 也许是善待自己最好的方式
+            p
+                | *（注：记得凭你的第一直觉回答哦！）
+        a.mybtn.animated.wobble(href='javascript:;')
+            img(src='../images/btn-start.png')
+    section.wrapper.hide
+        .num
+            p
+                span.active 1
+                span 2
+                span 3
+                span 4
+                span 5
+                span 6
+                span 7
+                span 8
+                span 9
+                span 10
+                span 11
+                span 12
+                span 13
+                span 14
+                span 15
+                span 16
+                span 17
+                span 18
+                span 19
+                span 20
+                span 21
+        .num-now.animated.shake.infinite
+            | 第
+            span 1
+            | 题
         section.question.hide(data-goodhabit='以终为始', data-category='02')
-            h2 1. 假如给你三天的光明，你会？
+            h2 假如给你三天的光明，你会？
             .list-group
                 ul
                     li
@@ -22,7 +63,7 @@ block content
                             input(data-score='1', type='radio', name='item01')
                             | 来一场说走就走的旅行
         section.question.hide(data-goodhabit='以终为始', data-category='02')
-            h2 2. 看到一篇文章《当儿孙满堂时，就去环游世界》，当时的心情是？
+            h2 看到一篇文章《当儿孙满堂时，就去环游世界》，当时的心情是？
             .list-group
                 ul
                     li
@@ -38,7 +79,7 @@ block content
                             input(data-score='2', type='radio', name='item02')
                             | 对，这正是我追求的生活
         section.question.hide(data-goodhabit='不断更新', data-category='07')
-            h2 3. 日记对你来说是？
+            h2 日记对你来说是？
             .list-group
                 ul
                     li
@@ -54,7 +95,7 @@ block content
                             input(data-score='0', type='radio', name='item03')
                             | 从未爱过
         section.question.hide(data-goodhabit='主动积极', data-category='01')
-            h2 4. 新来的主管被传爱挑毛病，你的第一反应是？
+            h2 新来的主管被传爱挑毛病，你的第一反应是？
             .list-group
                 ul
                     li
@@ -70,7 +111,7 @@ block content
                             input(data-score='2', type='radio', name='item04')
                             | 完美主义
         section.question.hide(data-goodhabit='统合综效', data-category='06')
-            h2 5. 主管布置了任务需要一周内完成，你总会？
+            h2 主管布置了任务需要一周内完成，你总会？
             .list-group
                 ul
                     li
@@ -86,7 +127,7 @@ block content
                             input(data-score='1', type='radio', name='item05')
                             | 一鼓作气两天内迅速完成
         section.question.hide(data-goodhabit='双赢思维', data-category='05')
-            h2 6. 与客户谈判中，哪种状况是你最渴望出现的？
+            h2 与客户谈判中，哪种状况是你最渴望出现的？
             .list-group
                 ul
                     li
@@ -102,7 +143,7 @@ block content
                             input(data-score='1', type='radio', name='item06')
                             | 找到折中的方式双方平分利益
         section.question.hide(data-goodhabit='主动积极', data-category='01')
-            h2 7. 以下情景最让你兴奋的是？
+            h2 以下情景最让你兴奋的是？
             .list-group
                 ul
                     li
@@ -118,7 +159,7 @@ block content
                             input(data-score='1', type='radio', name='item07')
                             | 被同事和上司认可和赞许
         section.question.hide(data-goodhabit='要事第一', data-category='03')
-            h2 8. 你的周末健身计划常常会？
+            h2 你的周末健身计划常常会？
             .list-group
                 ul
                     li
@@ -134,7 +175,7 @@ block content
                             input(data-score='1', type='radio', name='item08')
                             | 因不够坚持而中断
         section.question.hide(data-goodhabit='双赢思维', data-category='05')
-            h2 9. 跟你平级的同事成功谈下一个大项目，直觉告诉你是什么原因？
+            h2 跟你平级的同事成功谈下一个大项目，直觉告诉你是什么原因？
             .list-group
                 ul
                     li
@@ -150,7 +191,7 @@ block content
                             input(data-score='2', type='radio', name='item09')
                             | 自己能力还不够
         section.question.hide(data-goodhabit='以终为始', data-category='02')
-            h2 10. 让一位同事来评价你，你觉得会是？
+            h2 让一位同事来评价你，你觉得会是？
             .list-group
                 ul
                     li
@@ -166,7 +207,7 @@ block content
                             input(data-score='1', type='radio', name='item10')
                             | 坚持和沉默
         section.question.hide(data-goodhabit='统合综效', data-category='06')
-            h2 11. 在社交中，你希望？
+            h2 在社交中，你希望？
             .list-group
                 ul
                     li
@@ -182,7 +223,7 @@ block content
                             input(data-score='0', type='radio', name='item11')
                             | 大多时候与志趣相投的朋友呆在一起
         section.question.hide(data-goodhabit='统合综效', data-category='06')
-            h2 12. 在头脑风暴会议上，哪种角色会让你更习惯？
+            h2 在头脑风暴会议上，哪种角色会让你更习惯？
             .list-group
                 ul
                     li
@@ -198,7 +239,7 @@ block content
                             input(data-score='1', type='radio', name='item12')
                             | 记录者
         section.question.hide(data-goodhabit='不断更新', data-category='07')
-            h2 13. 聚会上，老同学对你的体型评价是？
+            h2 聚会上，老同学对你的体型评价是？
             .list-group
                 ul
                     li
@@ -214,7 +255,7 @@ block content
                             input(data-score='2', type='radio', name='item13')
                             | 模特的身材，羡慕不已
         section.question.hide(data-goodhabit='不断更新', data-category='07')
-            h2 14. 天气突变，各种“流”来袭，你不幸中招，习惯怎么应对？
+            h2 天气突变，各种“流”来袭，你不幸中招，习惯怎么应对？
             .list-group
                 ul
                     li
@@ -230,7 +271,7 @@ block content
                             input(data-score='1', type='radio', name='item14')
                             | 吃药尽快康复
         section.question.hide(data-goodhabit='主动积极', data-category='01')
-            h2 15. 面对不可挽回的感情，你通常会？
+            h2 面对不可挽回的感情，你通常会？
             .list-group
                 ul
                     li
@@ -246,7 +287,7 @@ block content
                             input(data-score='0', type='radio', name='item15')
                             | 情绪深陷其中，短时间内难以抽身
         section.question.hide(data-goodhabit='知彼解己', data-category='04')
-            h2 16. 过去，另一半在冲突中对你说得最多的是？
+            h2 过去，另一半在冲突中对你说得最多的是？
             .list-group
                 ul
                     li
@@ -262,7 +303,7 @@ block content
                             input(data-score='1', type='radio', name='item16')
                             | 你难道不能安静点吗？
         section.question.hide(data-goodhabit='双赢思维', data-category='05')
-            h2 17. 家庭日，你准备与父母看一场电影，可是父母双方却各有所爱，你会？
+            h2 家庭日，你准备与父母看一场电影，可是父母双方却各有所爱，你会？
             .list-group
                 ul
                     li
@@ -278,7 +319,7 @@ block content
                             input(data-score='2', type='radio', name='item17')
                             | 组织另一个活动
         section.question.hide(data-goodhabit='知彼解己', data-category='04')
-            h2 18. 孩子很叛逆，你在对朋友诉苦中常常会说？
+            h2 孩子很叛逆，你在对朋友诉苦中常常会说？
             .list-group
                 ul
                     li
@@ -294,7 +335,7 @@ block content
                             input(data-score='2', type='radio', name='item18')
                             | 我真想知道现在的孩子是怎么想的，难以理解
         section.question.hide(data-goodhabit='知彼解己', data-category='04')
-            h2 19. 另一半因小事向你大发雷霆，你会？
+            h2 另一半因小事向你大发雷霆，你会？
             .list-group
                 ul
                     li
@@ -310,7 +351,7 @@ block content
                             input(data-score='1', type='radio', name='item19')
                             | 不予理会，毕竟赢了道理输了感情
         section.question.hide(data-goodhabit='要事第一', data-category='03')
-            h2 20. 白天刚制定减肥计划，晚上路过烧烤店却被深深地吸引住了，于是？
+            h2 白天刚制定减肥计划，晚上路过烧烤店却被深深地吸引住了，于是？
             .list-group
                 ul
                     li
@@ -326,7 +367,7 @@ block content
                             input(data-score='2', type='radio', name='item20')
                             | 还是回去吃点水果好了
         section.question.hide(data-goodhabit='要事第一', data-category='03')
-            h2 21. 让你给自己的生活压力评价，会是？
+            h2 让你给自己的生活压力评价，会是？
             .list-group
                 ul
                     li
@@ -341,33 +382,38 @@ block content
                         label
                             input(data-score='1', type='radio', name='item21')
                             | 每天忙得连吃喝拉撒的时间都没有
-        section#conclusion.hide
-            .total-score
-                | 好习惯分数为
-                span
-                | 分，击败全国
-                span
-                | %的好习惯达人。
-                span
-            // 总评语
-            .epilogue
-            // 导语
-            .summary-start.hide
-            // 发光点 警惕
-            .light-flash.hide
-                .good.hide
-                    h3 发光点：
-                .bad.hide
-                    h3 警惕：
-            // 结语
-            .summary-end.hide
-            // 各分类的总分是3-4分的或其他分的
-            .summary-narrow.hide
-            a.btn.enter.white(href="/#end") 确 定
+    section#conclusion.hide
+        .box-wrap
+            .total-score.animated.swing
+                i
+                p
+                    | 好习惯分数为
+                    span
+                    | ，
+                    br
+                    | 击败全国
+                    span
+                    | 的好习惯达人。
+            .conclusion-text
+                // 总评语
+                .epilogue
+                // 导语
+                .summary-start.hide
+                // 发光点 警惕
+                .light-flash.hide
+                    .good.hide
+                        h3 发光点：
+                    .bad.hide
+                        h3 警惕：
+                // 结语
+                .summary-end.hide
+                // 各分类的总分是3-4分的或其他分的
+                .summary-narrow.hide
+            a.btn.enter.animated.shake(href='/#end') 确 定
 
     section#end.hide
         .box-wrap
-            p
+            p.animated.bounceIn
                 | 你坚持完成了一次内心之旅，
                 br
                 | 证明你是一个追求生活的人。
@@ -381,12 +427,12 @@ block content
                 | 不为名利
                 br
                 | 只为追求健康的生活习惯
-            .code-pic
-                img(src="/images/code-pic.png")
+            .code-pic.animated.bounceInDown
+                img(src='/images/code-pic.png')
                 p 扫一扫 享渡兰专属服务
-            a.btn.share(href="javascript:;") 分享是个好习惯
-            a.btn.white(href="/#conclusion") 重看结果
-            a.btn.white(href="/") 不服重测
+            a.btn.share.animated.shake(href='javascript:;') 分享是个好习惯
+            a.btn.white.animated.shake(href='/#conclusion') 重看结果
+            a.btn.white.animated.shake(href='/') 不服重测
 
     #mcover.hide
         img(src='/images/guide.png')
