@@ -8,12 +8,11 @@ exports.admin = function (req, res) {
         }
 
 
-        for (var item in habits) {
-            var aItemScore = JSON.parse(habits[item].aItemScore);
-            //console.log("----");
-            //console.log(aItemScore);
-        }
-
+        //for (var item in habits) {
+        //    var aItemScore = JSON.parse(habits[item].aItemScore);
+        //    //console.log("----");
+        //    //console.log(aItemScore);
+        //}
 
 
         res.render("admin", {

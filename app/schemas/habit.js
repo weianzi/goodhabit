@@ -11,14 +11,14 @@ var HabitSchema = new mongoose.Schema({
 });
 
 /*HabitSchema.pre("save", function (next) {
-    this.createAt = Date.now();
-    next();
-});*/
+ this.createAt = Date.now();
+ next();
+ });*/
 
 HabitSchema.statics = {
     fetch: function (cb) {
         return this.find({})
-            .sort("createAt")
+            .sort({"createAt": -1})
             .exec(cb);
     },
     findById: function (id, cb) {

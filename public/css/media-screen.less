@@ -1,4 +1,47 @@
 /*按屏幕宽度设定网页最小宽度*/
+
+@media screen and (min-width: 320px) and (max-height: 567px) {
+  body, #start, #conclusion, #end {
+    min-width: 320px;
+    height: 567px;
+    //overflow: hidden;
+  }
+
+  #start, #end {
+    padding-top: .6rem;
+  }
+
+  #start .box-wrap {
+    margin: 5% auto 10%;
+    padding: 1rem 0;
+  }
+
+  .wrapper .num {
+    margin: 0 auto;
+  }
+
+  #conclusion .box-wrap {
+    height: 21.6rem;
+  }
+
+  #conclusion .conclusion-text {
+    height: 13rem;
+  }
+
+  #end .box-wrap {
+    height: 22.9rem;
+    > p:nth-child(2) {
+      padding: .4rem 0;
+    }
+    .code-pic {
+      margin-bottom: .6rem;
+    }
+    .code-pic img {
+      width: 5.6rem;
+    }
+  }
+}
+
 @media screen and (min-width: 375px) and (max-width: 413px) {
   body, #start, #conclusion, #end {
     min-width: 375px; //ip6
