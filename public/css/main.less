@@ -79,6 +79,7 @@
       margin-bottom: 2rem;
       color: #000;
       font-size: 1.1em;
+      text-align: center;
     }
     //noinspection ALL
     .list-group {
@@ -104,6 +105,7 @@
           display: block;
           width: 10.25rem;
           padding: 0.25rem 1rem;
+          text-align: center;
           input {
             position: absolute;
             left: -999px;
@@ -119,8 +121,8 @@
   min-height: 568px;
   height: 28.4rem;
   padding-top: 1.6rem;
-  background: url("../images/main-bg.png") 50% 0 no-repeat;
-  background-size:auto 28.4rem;
+  background: url("../images/main-bg.png") 50% 0;
+  background-size: auto 28.4rem;
 }
 
 #start {
@@ -219,7 +221,7 @@
     }
     .light-flash {
       margin-bottom: .6rem;
-      .good{
+      .good {
         margin-bottom: .6rem;
       }
       h3 {
@@ -318,36 +320,13 @@
 }
 
 
-#start .mybtn{
-  //-webkit-animation-duration: 2s;
-  //animation-duration: 2s;
+img#closeSound{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: .7;
+  width: 16px;
 }
-
 
 @import "media-screen";
-@import "animate.css";
-
-.num-now.animated{
-  -webkit-animation-duration: 12s;
-  animation-duration: 12s;
-}
-
-.enter.animated{
-  -webkit-animation-delay: 4S;
-  animation-delay: 4S;
-}
-
-#end .btn.animated{
-  &:nth-of-type(1){
-    -webkit-animation-delay: 3S;
-    animation-delay: 3S;
-  }
-  &:nth-of-type(2){
-    -webkit-animation-delay: 5S;
-    animation-delay: 5S;
-  }
-  &:nth-of-type(3){
-    -webkit-animation-delay: 7S;
-    animation-delay: 7S;
-  }
-}
+@import "animate";

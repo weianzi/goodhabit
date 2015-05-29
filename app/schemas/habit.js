@@ -10,10 +10,10 @@ var HabitSchema = new mongoose.Schema({
     }
 });
 
-/*HabitSchema.pre("save", function (next) {
- this.createAt = Date.now();
- next();
- });*/
+HabitSchema.pre("save", function (next) {
+    this.createAt = Date.now();
+    next();
+});
 
 HabitSchema.statics = {
     fetch: function (cb) {
