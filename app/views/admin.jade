@@ -7,13 +7,15 @@ block content
             table.table.table-hover.table-bordered
                 thead
                     tr
+                        th.text-center ID
                         th.text-center(width='110') 测试时间
                         th.text-center(width='110') 总分
                         th.text-center 各题得分
                         th.text-center 各分类总分
                 tbody
-                    each item in habits
+                    each item, index in habits
                         tr
+                            td.text-center #{habits.length - index}
                             td #{moment(item.createAt).format('YYYY-MM-DD HH:mm:ss')}
                             td #{item.sumScore} 分 + 50
                             td.text-left #{item.aItemScore}
