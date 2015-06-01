@@ -440,6 +440,6 @@ block content
 
         audio#clickSound.hide-vis
             source(src='/images/click.wav')
-        audio#bgSound.hide-vis(autoplay='autoplay' loop)
+        //-audio#bgSound.hide-vis(autoplay='autoplay' loop)
             source(src='/images/bg-music.mp3')
-        img#closeSound(data-status='1' src='/images/to-close.png')
+        img#closeSound.hide(data-status='1' src='/images/to-close.png')
