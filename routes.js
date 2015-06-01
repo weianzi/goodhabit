@@ -4,10 +4,10 @@ var Admin = require("./app/controllers/admin");
 
 module.exports = function (app) {
 
-    app.get("/", Index.index);
+    app.get("/goodhabit", Index.index);
 
-    app.post("/admin/save", Save.save);
+    app.post("/goodhabit/admin/save", Save.save);
 
-    app.get("/admin", Admin.admin);
+    app.get("/goodhabit/admin", Admin.admin);
     
 };
