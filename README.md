@@ -19,6 +19,7 @@ show dbs
 use habit
 show collections
 db.habits.find({})
+db.users.update({"name":"a"}, {$set:{"role":51}})
 ```
 
 ###启动
